@@ -1,0 +1,5 @@
+local args = {
+   [1] = 3007
+}
+
+game:GetService("ReplicatedStorage").PetEvents.StartSwordEvent:FireServer(unpack(args))
