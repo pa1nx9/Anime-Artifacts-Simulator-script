@@ -1,0 +1,13 @@
+-- change the "Temple" to any NPC you want (autofarm)
+
+while wait(2) do
+
+local args = {
+    [1] = workspace.NPCFolder.Temple.Humanoid, -- Doflamingo, Teach, Crocodile, Grimmjow, Szayelaporro, Medazeppi, Yahaba, Kaidou, Susamaru, Ulquiorra Cifer, Sakazuki, Sōsuke (no idea if this one works), Temple, Akaza
+    [2] = workspace.NPCFolder.Temple, -- Doflamingo, Teach, Crocodile, Grimmjow, Szayelaporro, Medazeppi, Yahaba, Kaidou, Susamaru, Ulquiorra Cifer, Sakazuki, Sōsuke (no idea if this one works), Temple, Akaza
+    [3] = 2
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent.SwordHit:FireServer(unpack(args))
+
+end
